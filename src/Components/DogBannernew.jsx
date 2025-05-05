@@ -1,6 +1,6 @@
 import React from "react";
 
-const DogBanner = () => {
+const DogBannernew = () => {
   return (
     <div className="w-full mt-4 h-64 bg-[#f5deb3] flex items-center justify-center relative overflow-hidden rounded-lg shadow-md">
       {/* Decorative Circles */}
@@ -9,8 +9,7 @@ const DogBanner = () => {
 
       {/* Dog Image */}
       <img
-        // src="https://www.zigly.com/media/wysiwyg/dog-playful.png"
-        src="https://www.zigly.com/media/wysiwyg/Cat-Treats_1.png"
+        src="https://www.zigly.com/media/wysiwyg/dog-playful.png"
         alt="Playful Dog"
         className="w-[1500px] h-[400px] object-contain"
       />
@@ -18,4 +17,4 @@ const DogBanner = () => {
   );
 };
 
-export default DogBanner;
+export default DogBannernew;

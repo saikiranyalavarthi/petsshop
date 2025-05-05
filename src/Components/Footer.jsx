@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         {/* Brand Logo and Social Icons */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold">PetZone</h2>
+          <h2 className="text-2xl font-bold">VET&MEET</h2>
           <p className="text-sm max-w-xs">
             Your one-stop shop for all pet needs. Quality products and expert
             care.

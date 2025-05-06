@@ -18,7 +18,7 @@ function BannerSection() {
     <div className="relative">
       {/* Banner image */}
       <div
-        className="w-full h-96 bg-cover bg-center mt-5"
+        className="w-full h-96 bg-cover bg-center mt-5 bg-amber-300"
         style={{ backgroundImage: `url(${banners[currentIndex]})` }}
       >
         <div className="flex justify-end items-center h-full pr-4">

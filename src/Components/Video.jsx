@@ -2,7 +2,7 @@ import React from "react";
 
 const Video = () => {
   return (
-    <div className=" flex items-center justify-center bg-orange-50 p-1 m-20">
+    <div className=" flex items-center justify-center bg-amber-300 p-1 m-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full bg-white shadow-xl rounded-2xl p-6">
         {/* Left Side - Pet Shop Content */}
         <div className="flex flex-col justify-center">

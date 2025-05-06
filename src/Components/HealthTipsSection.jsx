@@ -47,7 +47,7 @@ const HealthTipsSection = () => {
         {articles.map((article, index) => (
           <div
             key={index}
-            className="bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition"
+            className="bg-amber-300 p-6 rounded-xl shadow hover:shadow-lg transition"
           >
             <img
               src={article.image}
@@ -57,7 +57,7 @@ const HealthTipsSection = () => {
             <h3 className="text-xl font-semibold text-gray-800 mb-3">
               {article.title}
             </h3>
-            <button className="mt-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full">
+            <button className="mt-2 bg-orange-300 hover:bg-orange-600 text-white px-4 py-2 rounded-full">
               {article.button}
             </button>
           </div>

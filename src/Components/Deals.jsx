@@ -55,7 +55,7 @@ const Deals = () => {
 
       {/* <div className="flex flex-wrap gap-6 justify-center"> */}
       <div className="overflow-x-auto">
-        <div className="flex gap-8 overflow-x-auto lg:overflow-x-visible lg:flex-wrap justify-center m-8 lg:mx-12 sm:flex-wrap sm:justify-center">
+        <div className="flex gap-6 overflow-x-auto lg:overflow-x-visible lg:flex-wrap justify-center m-2 my-8 lg:mx-12 sm:flex-wrap sm:justify-center">
           {Dealslist.map((deal, index) => (
             <motion.div
               key={deal.id}

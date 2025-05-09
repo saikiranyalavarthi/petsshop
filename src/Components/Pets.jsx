@@ -177,7 +177,7 @@ function PetSection() {
 
   return (
     <div className="overflow-x-auto">
-      <div className="flex gap-10 overflow-x-auto lg:overflow-x-visible lg:flex-wrap justify-center m-8 lg:mx-12 sm:flex-wrap sm:justify-center">
+      <div className="flex gap-6 overflow-x-auto lg:overflow-x-visible lg:flex-wrap justify-center m-2 my-8 lg:mx-12 sm:flex-wrap sm:justify-center">
         {pets.map((pet, index) => (
           <motion.div
             key={pet.id}

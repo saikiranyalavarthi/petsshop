@@ -58,38 +58,43 @@ const PetFoodList = () => {
         🏷️ Shop Our Top-Selling Favorites
       </h2>
 
-      <div className="flex flex-wrap gap-6 justify-center">
-        {petFoods.map((item, index) => (
-          <motion.div
-            key={item.id} // Corrected from deal.id to item.id
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.15 }}
-            className="w-[220px] bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center relative"
-          >
-            <img
-              src={item.image}
-              alt={item.title} // Corrected from item.name to item.title
-              className="w-[100px] h-[100px] object-cover rounded-full mx-auto mb-3 border-4 border-pink-200"
-            />
+      <div className="overflow-x-auto">
+        <div className="flex gap-6 overflow-x-auto lg:overflow-x-visible lg:flex-wrap justify-center m-8 lg:mx-4 sm:flex-wrap sm:justify-center">
+          {petFoods.map((item, index) => (
+            <motion.div
+              key={item.id} // Corrected from deal.id to item.id
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.15 }}
+              // className="w-[220px]  bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center relative"
+              className="min-w-[200px] max-w-[220px] h-[180px]bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center relative"
+            >
+              <img
+                src={item.image}
+                alt={item.title} // Corrected from item.name to item.title
+                className="w-[100px] h-[100px] object-cover rounded-full mx-auto mb-3 border-4 border-pink-200"
+              />
 
-            {/* Title */}
-            <p className="text-sm font-semibold text-gray-700">{item.title}</p>
+              {/* Title */}
+              <p className="text-sm font-semibold text-gray-700">
+                {item.title}
+              </p>
 
-            {/* Description */}
-            <p className="text-xs text-gray-600 mt-2">{item.description}</p>
+              {/* Description */}
+              <p className="text-xs text-gray-600 mt-2">{item.description}</p>
 
-            {/* Price */}
-            <p className="text-lg font-bold text-gray-800 mt-3">
-              ₹{item.price}
-            </p>
+              {/* Price */}
+              <p className="text-lg font-bold text-gray-800 mt-3">
+                ₹{item.price}
+              </p>
 
-            {/* Add to Cart Button */}
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all">
-              Add to Cart
-            </button>
-          </motion.div>
-        ))}
+              {/* Add to Cart Button */}
+              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all">
+                Add to Cart
+              </button>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

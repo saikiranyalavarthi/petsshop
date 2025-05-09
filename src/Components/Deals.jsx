@@ -53,25 +53,28 @@ const Deals = () => {
         🏷️ Premium Brand Deals
       </h2>
 
-      <div className="flex flex-wrap gap-6 justify-center">
-        {Dealslist.map((deal, index) => (
-          <motion.div
-            key={deal.id}
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.15 }}
-            className="w-[220px] bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center relative"
-          >
-            <img
-              src={deal.image}
-              alt={deal.name}
-              className="w-[100px] h-[100px] object-cover rounded-full mx-auto mb-3 border-4 border-pink-200"
-            />
+      {/* <div className="flex flex-wrap gap-6 justify-center"> */}
+      <div className="overflow-x-auto">
+        <div className="flex gap-8 overflow-x-auto lg:overflow-x-visible lg:flex-wrap justify-center m-8 lg:mx-12 sm:flex-wrap sm:justify-center">
+          {Dealslist.map((deal, index) => (
+            <motion.div
+              key={deal.id}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.15 }}
+              className="min-w-[200px] max-w-[200px] h-[180px] bg-white rounded-lg shadow-md p-4 text-center flex-shrink-0"
+            >
+              <img
+                src={deal.image}
+                alt={deal.name}
+                className="w-[100px] h-[100px] object-cover rounded-full mx-auto mb-3 border-4 border-pink-200"
+              />
 
-            {/* Name */}
-            <p className="text-sm font-semibold text-gray-700">{deal.name}</p>
-          </motion.div>
-        ))}
+              {/* Name */}
+              <p className="text-sm font-semibold text-gray-700">{deal.name}</p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

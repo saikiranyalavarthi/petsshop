@@ -53,14 +53,15 @@ function Care() {
         🐶 Complete Care for Your Dog
       </h1>
 
-      <div className="flex gap-6 flex-wrap justify-center">
+      <div className="flex gap-10 overflow-x-auto lg:overflow-x-visible lg:flex-wrap justify-center m-4 lg:mx-8 sm:flex-wrap sm:justify-center">
         {pets.map((pet, index) => (
           <motion.div
             key={pet.id}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="w-[220px] bg-gray-100 rounded-2xl shadow-md p-4 relative text-center"
+            // className="w-[220px] bg-gray-100 rounded-2xl shadow-md p-4 relative text-center"
+            className="min-w-[200px] max-w-[200px] h-[180px] bg-white rounded-lg shadow-md p-4 text-center flex-shrink-0"
           >
             {/* Discount Badge */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white text-sm px-4 py-1 rounded-full shadow">

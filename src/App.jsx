@@ -13,7 +13,7 @@ import Video from "./Components/Video";
 import HealthTipsSection from "./Components/HealthTipsSection";
 import ReviewsSection from "./Components/ReviewsSection";
 import DogBannernew from "./Components/DogBannernew";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 const App = () => {
   return (

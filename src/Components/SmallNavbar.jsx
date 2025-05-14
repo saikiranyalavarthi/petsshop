@@ -192,7 +192,7 @@ function SmallNavbar() {
   };
 
   return (
-    <nav className="bg-blue-600 text-white shadow-md p-2">
+    <nav className="bg-amber-500 text-white shadow-md p-2">
       <div className="container mx-auto flex flex-wrap justify-center gap-2 lg:gap-10">
         {Object.keys(categories).map((category) => (
           <div key={category} className="relative">

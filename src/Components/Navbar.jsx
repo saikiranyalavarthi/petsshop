@@ -92,7 +92,7 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo (Desktop) */}
         <div className="hidden lg:block text-2xl font-bold text-blue-600">
-          <a href="#">VET&MEET</a>
+          <a href="">VET&MEET</a>
         </div>
 
         {/* Mobile Logo + Hamburger */}
